@@ -12,7 +12,7 @@
 A simple Docker container and image garbage collection script.
 
 * Containers that exited more than an hour ago are removed.
-* Images that don't belong to any remaining container after that are removed.
+* Images that don't belong to any remaining container after that will be removed.
 
 Although docker normally prevents removal of images that are in use by
 containers, we take extra care to not remove any image tags (e.g., ubuntu:14.04,
